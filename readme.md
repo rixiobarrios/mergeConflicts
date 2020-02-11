@@ -10,15 +10,15 @@ With your pair, decide who will play the role of Student 1 and Student 2!
 
 **Student 1**
 
-- Create a new repository on GitHub named "merge_practice". **Don't select the "Initialize this repository with a README" option on GitHub!**
+- Create a new repository on GitHub named "workflow_practice". **Don't select the "Initialize this repository with a README" option on GitHub!**
 - Add the second student as a collaborator to your repo by going to the Settings
   tab then selecting "Collaborators & Teams" on the left.
 
 Once the repository is created on GitHub, follow these steps inside of your
 local sandbox directory:
 
-1. `mkdir merge_practice`
-2. `cd merge_practice`
+1. `mkdir workflow_practice`
+2. `cd workflow_practice`
 3. `npx create-react-app .`
 4. `git add .`
 5. `git commit -m "initial commit"`
@@ -35,7 +35,7 @@ confirm you as a collaborator to the repo Student 1 created. Check your email
 After Student 1 has pushed their code up to the repo, do this in your local sandbox directory:
 
 1. `git clone <url>`
-2. `cd merge_practice`
+2. `cd workflow_practice`
 3. `npm install`
 4. `code .`
 
