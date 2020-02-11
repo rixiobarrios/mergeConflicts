@@ -10,17 +10,16 @@ With your pair, decide who will play the role of Student 1 and Student 2!
 
 **Student 1**
 
-- Create a new repository on GitHub named "emergency_compliment". Don't select
-  the "Initialize this repository with a README" option on GitHub!
+- Create a new repository on GitHub named "merge_practice". **Don't select the "Initialize this repository with a README" option on GitHub!**
 - Add the second student as a collaborator to your repo by going to the Settings
   tab then selecting "Collaborators & Teams" on the left.
 
 Once the repository is created on GitHub, follow these steps inside of your
-sandbox:
+local sandbox directory:
 
-1. `mkdir emergency_compliment`
-2. `cd emergency_compliment`
-3. `create-react-app .`
+1. `mkdir merge_practice`
+2. `cd merge_practice`
+3. `npx create-react-app .`
 4. `git add .`
 5. `git commit -m "initial commit"`
 6. `git remote add origin <the_url_to_your_repo>`
@@ -33,10 +32,10 @@ Once Student 1 has added you as a collaborator, you will receive and email to
 confirm you as a collaborator to the repo Student 1 created. Check your email
 (it could take a few minutes to come through) and click the confirmation link.
 
-After Student 1 has pushed their code:
+After Student 1 has pushed their code up to the repo, do this in your local sandbox directory:
 
 1. `git clone <url>`
-2. `cd emergency_compliment`
+2. `cd merge_practice`
 3. `npm install`
 4. `code .`
 
@@ -44,8 +43,7 @@ After Student 1 has pushed their code:
 
 **Both Students (pair program on one computer)**
 
-- Check out a new feature branch and create a Hello component. It should take
-  the users' name, and return `Hello {name}`. Keep it simple!
+- Create a new feature branch and create a Hello component. It should return `Hello` in a h1 element. Keep it simple!
 
 - Commit your changes and push them to the remote repo using this command
   `git push origin <branch name>`. Open a pull request on Github to merge the
@@ -65,10 +63,6 @@ After Student 1 has pushed their code:
 
 **Both Students**
 
-- First, make sure all remote `PRs` and branches have been merged together. Once
-  your changes are successfully merged, delete your feature branches from GitHub
-  and your local machines.
-
 - **Locally**, make sure you are checked out to our `master` branch.
 
 - Then, do a `git pull origin master` to receive the latest changes.
@@ -82,7 +76,7 @@ After Student 1 has pushed their code:
   should return a random compliment from the list below:
 
 ```js
-const data = [
+let data = [
   "Good effort!",
   "What a fine sweater!",
   "I appreciate all of your opinions.",
@@ -128,7 +122,7 @@ const data = [
 
 **Both Students (individually)**
 
-- Check out a feature branch locally.
+- Check out a feature branch locally. In this branch, and *in order:*
 
 **Student 1**
 
@@ -136,7 +130,7 @@ const data = [
 
 **Student 2**
 
-- Change `var data` to `const compliments`
+- Change `let data` to `const compliments`
 
 **Student 1**
 
@@ -162,3 +156,5 @@ a PR, and merge your branch into master.
 **Both Students (individually)**
 
 Pull down the changes to `master`.
+
+Congrats you solved a merge conflict! :tada:
